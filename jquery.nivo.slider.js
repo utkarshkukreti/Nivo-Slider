@@ -154,8 +154,10 @@
 			
 			//Add Control nav
 			if(settings.controlNav){
+				var nivoControlWrapper = $('<div class="nivo-controlNavWrapper"></div>');
 				var nivoControl = $('<div class="nivo-controlNav"></div>');
-				slider.append(nivoControl);
+				nivoControlWrapper.append(nivoControl);
+				slider.append(nivoControlWrapper);
 				for(var i = 0; i < kids.length; i++){
 					if(settings.controlNavThumbs){
 						var child = kids.eq(i);
